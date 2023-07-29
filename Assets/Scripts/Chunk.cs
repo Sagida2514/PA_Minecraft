@@ -16,7 +16,7 @@ public class Chunk
     List<int> triangles = new List<int>();
     List<Vector2> uvs = new List<Vector2>();
 
-    private byte[,,] voxelMap = new byte[VoxelData.ChunkWidth, VoxelData.ChunkHeight, VoxelData.ChunkWidth];
+    public byte[,,] voxelMap = new byte[VoxelData.ChunkWidth, VoxelData.ChunkHeight, VoxelData.ChunkWidth];
 
     private World world;
 
@@ -62,7 +62,8 @@ public class Chunk
             {
                 for (int z = 0; z < VoxelData.ChunkWidth; z++)
                 {
-                    AddVoxelDataToChunk(new Vector3(x, y, z));
+                    if (world.blockTypes[voxelMap[x, y, z]].isSolid)
+                        AddVoxelDataToChunk(new Vector3(x, y, z));
                 }
             }
         }
