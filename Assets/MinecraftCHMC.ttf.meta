@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 4a47381a8e01ba943bdbefae5520ac28
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - MinecraftCHMC
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 699d95aaff510c24ca88c19e6c2e5a71, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
